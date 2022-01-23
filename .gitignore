@@ -1,0 +1,6 @@
+env/
+script.sh
+nyoba.sh
+nyoba.py
+*.log
+credential.py
