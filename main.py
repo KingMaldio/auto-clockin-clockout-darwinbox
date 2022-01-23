@@ -4,14 +4,12 @@ import time
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from .credential import username, password
+from .credential import username, password, url
 
 op = webdriver.ChromeOptions()
 op.add_argument('headless')
 s=Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(options=op, service=s)
-
-url = "https://zenius.darwinbox.com"
 
 # Login Page
 driver.get(url)
